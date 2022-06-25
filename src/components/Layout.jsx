@@ -123,6 +123,7 @@ export function Layout({ children }) {
             >
               <Image
                 src={posterImage}
+                unoptimized ={true}
                 alt=""
                 layout="responsive"
                 sizes="(min-width: 1024px) 20rem, (min-width: 640px) 16rem, 12rem"
