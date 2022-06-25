@@ -5,6 +5,7 @@ import { parse } from 'rss-to-json'
 
 import { useAudioPlayer } from '@/components/AudioProvider'
 import { Container } from '@/components/Container'
+import posterImage from '@/images/poster.jpg'
 
 export default function Home({ episodes }) {
   return (
@@ -18,6 +19,7 @@ export default function Home({ episodes }) {
           name="description"
           content="Our contributions to the advancement of knowledge and civilization."
         />
+        <meta property="og:image" content={posterImage} />
       </Head>
       <div className="pt-16 pb-12 sm:pb-4 lg:pt-12">
         <Container>
@@ -79,7 +81,7 @@ function EpisodeEntry({ episode }) {
             <button
               type="button"
               onClick={() => player.toggle()}
-              className="flex items-center text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900"
+              className="flex items-center text-sm font-bold leading-6 text-green-600 hover:text-green-700 active:text-green-900"
             >
               <span className="sr-only">
                 {player.playing ? 'Pause' : 'Play'}
@@ -113,7 +115,7 @@ function EpisodeEntry({ episode }) {
               /
             </span>
             <Link href={`/${episode.id}`}>
-              <a className="flex items-center text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900">
+              <a className="flex items-center text-sm font-bold leading-6 text-green-600 hover:text-green-700 active:text-green-900">
                 Show notes
               </a>
             </Link>

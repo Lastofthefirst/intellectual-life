@@ -4,7 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { AudioPlayer } from '@/components/player/AudioPlayer'
-import posterImage from '@/images/poster2.png'
+import posterImage from '@/images/poster.jpg'
 
 function random(length, min, max, seed = 1) {
   return Array.from({ length }).map(() => {
@@ -30,8 +30,8 @@ function Waveform() {
         </linearGradient>
         <linearGradient id={`${id}-gradient`}>
           <stop offset="0%" stopColor="#4989E8" />
-          <stop offset="50%" stopColor="#6159DA" />
-          <stop offset="100%" stopColor="#FF54AD" />
+          <stop offset="50%" stopColor="#054f21" />
+          <stop offset="100%" stopColor="#54FFA7" />
         </linearGradient>
         <mask id={`${id}-mask`}>
           <rect width="100%" height="100%" fill={`url(#${id}-pattern)`} />
@@ -73,11 +73,11 @@ function AboutSection(props) {
         <svg aria-hidden="true" className="h-2.5 w-2.5">
           <path
             d="M0 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5Z"
-            className="fill-violet-300"
+            className="fill-green-500"
           />
           <path
             d="M6 1a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V1Z"
-            className="fill-pink-300"
+            className="fill-green-300"
           />
         </svg>
         <span className="ml-2.5">About</span>
@@ -97,7 +97,7 @@ function AboutSection(props) {
       {!isExpanded && (
         <button
           type="button"
-          className="hidden mt-2 text-sm font-bold leading-6 text-pink-500 hover:text-pink-700 active:text-pink-900 lg:inline-block"
+          className="hidden mt-2 text-sm font-bold leading-6 text-green-600 hover:text-green-700 active:text-green-900 lg:inline-block"
           onClick={() => setIsExpanded(true)}
         >
           Show more
