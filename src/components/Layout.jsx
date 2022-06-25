@@ -87,11 +87,11 @@ function AboutSection(props) {
           'lg:line-clamp-4': !isExpanded,
         })}
       >
-        In this talk, at the 2016 ABS conference Farzam Arbab explores the
-        intellectual life of the Bahá’í community. The question of what its
-        contribution to humanity and the advancement of civilization will be is
+        In this talk at the 2016 ABS conference, Farzam Arbab explores the
+        intellectual life of the Bahá’í community. The question of what will be its
+        contribution to humanity and the advancement of civilization is
         raised. Three challenges in this regard are described. Then later three
-        requirements for the development of the type of intelectuality are
+        requirements for the development of the type of intelectuality we are seeking are
         offered.
       </p>
       {!isExpanded && (
