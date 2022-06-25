@@ -1,5 +1,4 @@
 import { Head, Html, Main, NextScript } from 'next/document'
-import posterImage from '@/images/poster.jpg'
 
 export default function Document() {
   let shortDescription = "Our contributions to the advancement of knowledge and civilization."
@@ -32,7 +31,6 @@ export default function Document() {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://farzam.ridvan.org" />
       <meta property="og:title" content={title} />
-      <meta property="og:image" content={posterImage} />
       <meta property="og:description" content={shortDescription} />
       <meta property="og:site_name" content={title} />
       <meta property="og:locale" content="en_US" />
@@ -48,7 +46,6 @@ export default function Document() {
         name="twitter:description"
         content={shortDescription}
       />
-      <meta name="twitter:image" content={posterImage}></meta>
       <script async defer data-domain="farzam.ridvan.org" src="https://stats.ridvan.org/js/plausible.js"></script>
       </Head>
       <body>
