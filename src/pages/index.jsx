@@ -7,13 +7,12 @@ import { useAudioPlayer } from '@/components/AudioProvider'
 import { Container } from '@/components/Container'
 
 export default function Home({ episodes }) {
-
-
   return (
     <>
       <Head>
         <title>
-        The Intellectual Life of the Bahá’í Community - Our contributions to the advancement of knowledge and civilization.
+          The Intellectual Life of the Bahá’í Community - Our contributions to
+          the advancement of knowledge and civilization.
         </title>
         <meta
           name="description"
@@ -71,14 +70,10 @@ function EpisodeEntry({ episode }) {
             dateTime={date.toISOString()}
             className="font-mono text-sm leading-7 -order-1 text-slate-500"
           >
-            {new Intl.DateTimeFormat('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-            }).format(date)}
+            {episode.description.split(' ')[0]}
           </time>
           <p className="mt-1 text-base leading-7 text-slate-700">
-            {episode.description}
+            {episode.description.split(' ').slice(1, -1).join(' ')}
           </p>
           <div className="flex gap-4 items-center mt-4">
             <button
@@ -130,7 +125,9 @@ function EpisodeEntry({ episode }) {
 }
 
 export async function getStaticProps() {
-  const feed = await parse('https://raw.githubusercontent.com/Lastofthefirst/farzam/main/feed')
+  const feed = await parse(
+    'https://raw.githubusercontent.com/Lastofthefirst/farzam/main/feed'
+  )
 
   return {
     props: {

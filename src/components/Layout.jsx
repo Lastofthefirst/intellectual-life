@@ -87,7 +87,12 @@ function AboutSection(props) {
           'lg:line-clamp-4': !isExpanded,
         })}
       >
-        In this talk, at the 2016 ABS conference Farzam Arbab explores the intellectual life of the Bahá’í community. The question of what its contribution to humanity and the advancement of civilization will be is raised. Three challenges in this regard are described. Then later three requirements for the development of the type of intelectuality are offered.
+        In this talk, at the 2016 ABS conference Farzam Arbab explores the
+        intellectual life of the Bahá’í community. The question of what its
+        contribution to humanity and the advancement of civilization will be is
+        raised. Three challenges in this regard are described. Then later three
+        requirements for the development of the type of intelectuality are
+        offered.
       </p>
       {!isExpanded && (
         <button
@@ -123,7 +128,7 @@ export function Layout({ children }) {
             >
               <Image
                 src={posterImage}
-                unoptimized ={true}
+                unoptimized={true}
                 alt=""
                 layout="responsive"
                 sizes="(min-width: 1024px) 20rem, (min-width: 640px) 16rem, 12rem"
@@ -139,7 +144,8 @@ export function Layout({ children }) {
               </Link>
             </p>
             <p className="mt-3 text-lg font-medium leading-8 text-slate-700">
-            Our contributions to the advancement of knowledge and civilization itself.
+              Our contributions to the advancement of knowledge and civilization
+              itself.
             </p>
           </div>
           <AboutSection className="hidden mt-12 lg:block" />
@@ -159,7 +165,7 @@ export function Layout({ children }) {
             </h2>
             <div className="h-px bg-gradient-to-r from-slate-200/0 via-slate-200 to-slate-200/0 lg:hidden" />
             <ul className="flex justify-center mt-4 space-x-10 text-base font-medium leading-7 text-slate-700 sm:space-x-8 lg:block lg:space-x-0 lg:space-y-4">
-              <li className="flex">
+              {/* <li className="flex">
                 <Link href="/">
                   <a className="flex items-center group">
                     <svg
@@ -200,23 +206,28 @@ export function Layout({ children }) {
                     </span>
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li className="flex">
-                <Link href="/">
+                <Link target={"_blank"} href="https://github.com/Lastofthefirst/farzam/releases/download/publish/Farzam.zip">
                   <a className="flex items-center group">
                     <svg
-                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="w-8 h-8 fill-slate-400 group-hover:fill-slate-600"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
                     >
-                      <path d="M16 28.8A12.77 12.77 0 0 1 3.2 16 12.77 12.77 0 0 1 16 3.2 12.77 12.77 0 0 1 28.8 16 12.77 12.77 0 0 1 16 28.8Zm0-5.067.96-.96-.96-3.68-.96 3.68.96.96Zm-1.226-.054-.48 1.814 1.12-1.12-.64-.694Zm2.453 0-.64.64 1.12 1.12-.48-1.76Zm.907 3.307L16 24.853l-2.133 2.133c.693.107 1.387.213 2.133.213.747 0 1.44-.053 2.134-.213ZM16 4.799C9.814 4.8 4.8 9.813 4.8 16c0 4.907 3.147 9.067 7.52 10.56l2.4-8.906c-.533-.374-.853-1.014-.853-1.707A2.14 2.14 0 0 1 16 13.813a2.14 2.14 0 0 1 2.134 2.133c0 .693-.32 1.28-.854 1.707l2.4 8.906A11.145 11.145 0 0 0 27.2 16c0-6.186-5.013-11.2-11.2-11.2Zm7.307 16.747c-.267.32-.747.427-1.12.16-.373-.267-.427-.747-.16-1.067 0 0 1.44-1.92 1.44-4.64 0-2.72-1.44-4.64-1.44-4.64-.267-.32-.213-.8.16-1.066.373-.267.853-.16 1.12.16.107.106 1.76 2.293 1.76 5.546 0 3.254-1.653 5.44-1.76 5.547Zm-3.893-2.08c-.32-.32-.267-.907.053-1.227 0 0 .8-.853.8-2.24 0-1.386-.8-2.186-.8-2.24-.32-.32-.32-.853-.053-1.226.32-.374.8-.374 1.12-.054.053.054 1.333 1.387 1.333 3.52 0 2.134-1.28 3.467-1.333 3.52-.32.32-.8.267-1.12-.053Zm-6.827 0c-.32.32-.8.373-1.12.053-.053-.106-1.333-1.386-1.333-3.52 0-2.133 1.28-3.413 1.333-3.52.32-.32.853-.32 1.12.054.32.32.267.906-.053 1.226 0 .054-.8.854-.8 2.24 0 1.387.8 2.24.8 2.24.32.32.373.854.053 1.227Zm-2.773 2.24c-.374.267-.854.16-1.12-.16-.107-.107-1.76-2.293-1.76-5.547 0-3.253 1.653-5.44 1.76-5.546.266-.32.746-.427 1.12-.16.373.266.426.746.16 1.066 0 0-1.44 1.92-1.44 4.64 0 2.72 1.44 4.64 1.44 4.64.266.32.16.8-.16 1.067Z" />
+                      <path
+                        fillRule="evenodd"
+                        d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1.586l-.293-.293a1 1 0 10-1.414 1.414l2 2 .002.002a.997.997 0 001.41 0l.002-.002 2-2a1 1 0 00-1.414-1.414l-.293.293V9z"
+                      />
                     </svg>
-                    <span className="sr-only sm:hidden">Overcast</span>
-                    <span className="hidden sm:ml-3 sm:block">Overcast</span>
+                    <span className="sr-only sm:hidden">Download Full</span>
+                    <span className="hidden sm:ml-3 sm:block">Download Full</span>
                   </a>
                 </Link>
               </li>
               <li className="flex">
-                <Link href="/">
+                <Link href="https://raw.githubusercontent.com/Lastofthefirst/farzam/main/feed">
                   <a className="flex items-center group">
                     <svg
                       aria-hidden="true"
@@ -238,6 +249,25 @@ export function Layout({ children }) {
                     </svg>
                     <span className="sr-only sm:hidden">RSS Feed</span>
                     <span className="hidden sm:ml-3 sm:block">RSS Feed</span>
+                  </a>
+                </Link>
+              </li>
+              <li className="flex">
+                <Link
+                  target="_blank"
+                  href="https://yewtu.be/watch?v=By4IDyhjJ9Y"
+                >
+                  <a className="flex items-center group">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-8 h-8 fill-slate-400 group-hover:fill-slate-600"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                    </svg>
+                    <span className="sr-only sm:hidden">Video</span>
+                    <span className="hidden sm:ml-3 sm:block">Video</span>
                   </a>
                 </Link>
               </li>

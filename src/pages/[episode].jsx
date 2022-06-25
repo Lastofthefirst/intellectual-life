@@ -31,7 +31,7 @@ export default function Episode({ episode }) {
       <article className="py-16 lg:py-36">
         <Container>
           <header className="flex flex-col">
-            <div className="flex items-center gap-6">
+            <div className="flex gap-6 items-center">
               <PlayButton player={player} size="large" />
               <div className="flex flex-col">
                 <h1 className="mt-2 text-4xl font-bold text-slate-900">
@@ -39,18 +39,14 @@ export default function Episode({ episode }) {
                 </h1>
                 <time
                   dateTime={date.toISOString()}
-                  className="-order-1 font-mono text-sm leading-7 text-slate-500"
+                  className="font-mono text-sm leading-7 -order-1 text-slate-500"
                 >
-                  {new Intl.DateTimeFormat('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  }).format(date)}
+                  {episode.description.split(" ")[0]}
                 </time>
               </div>
             </div>
-            <p className="ml-24 mt-3 text-lg font-medium leading-8 text-slate-700">
-              {episode.description}
+            <p className="mt-3 ml-24 text-lg font-medium leading-8 text-slate-700">
+              {episode.description.split(" ").slice(1, -1).join(" ")}
             </p>
           </header>
           <hr className="my-12 border-gray-200" />
@@ -95,7 +91,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  let feed = await parse('https://raw.githubusercontent.com/Lastofthefirst/farzam/main/feed')
+  let feed = await parse('https://their-side-feed.vercel.app/api/feed')
 
   return {
     paths: feed.items.map(({ id }) => ({
