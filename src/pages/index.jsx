@@ -15,12 +15,10 @@ export default function Home({ episodes }) {
           The Intellectual Life of the Bahá’í Community - Our contributions to
           the advancement of knowledge and civilization.
         </title>
-        <meta name="twitter:image" content={posterImage}></meta>
-        <meta name="image" property="og:image" content={posterImage} />
 
         <meta
           name="description"
-          content="Our contributions to the advancement of knowledge and civilization."
+          content="A talk from Dr. Farzam Arbab about, our contributions to the advancement of knowledge and civilization."
         />
     
       </Head>

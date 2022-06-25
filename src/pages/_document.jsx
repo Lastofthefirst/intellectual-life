@@ -17,10 +17,7 @@ export default function Document() {
           href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap"
         />
         <meta charSet="utf-8"></meta>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, viewport-fit=cover"
-      ></meta>
+     
       {/* <link rel="icon" href="/rose.svg" /> */}
       <meta name="description" content={shortDescription}></meta>
       <meta name="robots" content="index, follow" />
@@ -34,6 +31,8 @@ export default function Document() {
       <meta property="og:description" content={shortDescription} />
       <meta property="og:site_name" content={title} />
       <meta property="og:locale" content="en_US" />
+      <meta name="twitter:image" content="/poster.jpg"></meta>
+        <meta name="image" property="og:image" content="/poster.jpg" />
       {/* <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630"></meta> */}
 
