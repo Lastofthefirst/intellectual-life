@@ -16,13 +16,13 @@ export default function Home({ episodes }) {
           the advancement of knowledge and civilization.
         </title>
         <meta name="twitter:image" content={posterImage}></meta>
-        <meta property="og:image" content={posterImage} />
+        <meta name="image" property="og:image" content={posterImage} />
 
         <meta
           name="description"
           content="Our contributions to the advancement of knowledge and civilization."
         />
-        <meta property="og:image" content={posterImage} />
+    
       </Head>
       <div className="pt-16 pb-12 sm:pb-4 lg:pt-12">
         <Container>
