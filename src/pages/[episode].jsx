@@ -91,8 +91,8 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  let feed = await parse('https://their-side-feed.vercel.app/api/feed')
-
+  let feed = await parse('https://raw.githubusercontent.com/Lastofthefirst/farzam/main/feed')
+  console.log(feed.items.map(el=>el.id))
   return {
     paths: feed.items.map(({ id }) => ({
       params: {
