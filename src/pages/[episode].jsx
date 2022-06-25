@@ -25,8 +25,10 @@ export default function Episode({ episode }) {
   return (
     <>
       <Head>
-        <title>{episode.title} - Their Side</title>
+        <title>{episode.title} - Farzam Arbab</title>
         <meta name="description" content={episode.description} />
+        <meta name="twitter:image" content="/poster.jpg"></meta>
+        <meta name="image" property="og:image" content="/poster.jpg" />
       </Head>
       <article className="py-16 lg:py-36">
         <Container>
