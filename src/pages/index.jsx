@@ -15,6 +15,9 @@ export default function Home({ episodes }) {
           The Intellectual Life of the Bahá’í Community - Our contributions to
           the advancement of knowledge and civilization.
         </title>
+        <meta name="twitter:image" content={posterImage}></meta>
+        <meta property="og:image" content={posterImage} />
+
         <meta
           name="description"
           content="Our contributions to the advancement of knowledge and civilization."
