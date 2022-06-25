@@ -73,7 +73,7 @@ function EpisodeEntry({ episode }) {
             {episode.description.split(' ')[0]}
           </time>
           <p className="mt-1 text-base leading-7 text-slate-700">
-            {episode.description.split(' ').slice(1, -1).join(' ')}
+            {episode.description.split(' ').slice(1).join(' ')}
           </p>
           <div className="flex gap-4 items-center mt-4">
             <button
