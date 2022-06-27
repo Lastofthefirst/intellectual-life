@@ -1,8 +1,8 @@
 import { Head, Html, Main, NextScript } from 'next/document'
 
 export default function Document() {
-  let shortDescription = "Our contributions to the advancement of knowledge and civilization."
-  let title = "The Intellectual Life of the Bahá’í Community"
+  let shortDescription = "A talk from Dr. Farzam Arbab about our contributions to the advancement of knowledge and civilization."
+  let title = "The Intellectual Life of the Bahá’í Community - Farzam Arbab"
 
   return (
     <Html className="antialiased bg-white" lang="en">
